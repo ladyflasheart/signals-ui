@@ -1,15 +1,16 @@
-import React from 'react';
-import './App.css';
-import Question from './survey/Question';
+import React from 'react'
+import './App.css'
+import SignalForm from './survey/SignalForm'
 
 function App() {
+
   return (
     <div className="App">
       <header className="App-header">Signals
       </header>
       <main className="App-main">
-       <Question questionText="How do you feel about trust levels within the team?"/>
-        <div> Answer placeholder</div>
+        <SignalForm>
+        </SignalForm>
       </main>
       <footer className="App-footer">
         &copy; Erica Bradbury 2019
