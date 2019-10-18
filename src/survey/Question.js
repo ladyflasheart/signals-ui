@@ -1,16 +1,18 @@
-import React from 'react'
-import PropTypes from '../../node_modules/prop-types'
+// @flow
 
-const Question = ({questionText}) => {
+import React from 'react'
+
+
+type QuestionProps = {
+  questionText : string
+}
+
+const Question = ({questionText}: QuestionProps) => {
   return (
     <div className="Question">
       <p>{questionText}</p>
     </div>
   )
-}
-
-Question.propTypes = {
-  questionText : PropTypes.string
 }
 
 export default Question

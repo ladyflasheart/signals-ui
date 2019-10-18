@@ -4,3 +4,13 @@
     justify-content: flex-start;
     align-items: baseline;
 }
+
+.Signal input {
+    margin : 2% 3%;
+}
+
+/*
+    margin: 2% 3%;
+    flex-grow: 3;
+    text-align: left;
+ */

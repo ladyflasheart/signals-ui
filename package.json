@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-scripts": "3.0.1"
@@ -29,6 +30,9 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^8.0.6"
+    "@testing-library/react": "^8.0.6",
+    "babel-preset-flow": "^6.23.0",
+    "flow-bin": "^0.109.0",
+    "flow-typed": "^2.6.1"
   }
 }

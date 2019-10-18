@@ -1,25 +1,27 @@
+// @flow
+
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import AnswerInput from './AnswerInput'
-import AnswerText from './AnswerText'
 import './Signal.css'
+import type {SignalData} from './SignalList'
 
-class Signal extends Component {
+// flow type checking definitions
+type SignalProps = {
+  settings: SignalData
+}
+
+class Signal extends Component<SignalProps> {
   render () {
-    const { settings: {colour}, settings: {text} } = this.props
-
+    const {settings}: SignalProps = this.props
     return (
       <div className="Signal">
-        <AnswerInput colour={colour}/>
-        <AnswerText text={text}/>
+        <div>
+          <input type="radio" className={settings.colour} name="answers" id={settings.answerId}
+                 value={settings.answerId}/>
+          <label htmlFor={settings.answerId}>{settings.text}</label>
+        </div>
       </div>
     )
   }
-}
-
-Signal.propTypes = {
-  colour : PropTypes.string,
-  text : PropTypes.string
 }
 
 export default Signal
